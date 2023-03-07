@@ -39,6 +39,7 @@ ___
 - Git;
 - VSCode, PHPStorm;
 - Scrum;
+- BEM
 
 ### Soft skills:
 
@@ -79,4 +80,12 @@ months(config) {
   return values;
 }
 
-\```
+```
+
+## My projects:
+
+- [Coin](https://github.com/SlavaPankov/coin-vue) - This is Vue 3 project. I made simplified banking operations with cryptocurrencies. This project is at the stage of code refactoring.
+
+- [Technozavr](https://github.com/SlavaPankov/Technozavr) - This is also Vue 3 project. I made an online store.
+
+- [pravoNN](https://github.com/SlavaPankov/pravoNN) - This project is a commercial order. Adaptive, crossbrowsers weblayout. The project uses gulp, BEM, SCSS. Some libraries: Swiper.js, inputmask, just-validate. And also I made send emails with "phpmailer"
