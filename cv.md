@@ -10,7 +10,7 @@ ___
 
 - Phone: +7 (705)-865-74-99;
 - Email: [SlavaPank94@yandex.ru](mailto:SlavaPank94@yandex.ru) ([pankovslava94@gmail.com](mailto:pankovslava94@gmail.com));
-- Telegram: [SlavaPankov](https://t.me:SlavaPankov);
+- Telegram: [SlavaPankov](https://t.me/SlavaPankov);
 - GitHub: [SlavaPankov](https://github.com/SlavaPankov/);
 - Diskord: SlavaPankov(@SlavaPankov);
 
