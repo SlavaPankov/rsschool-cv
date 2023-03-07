@@ -48,3 +48,35 @@ ___
 - Teamwork;
 - Adaptability;
 - Critical thinking;
+
+## Code example:
+
+```javascript
+
+/* 
+  Метод возвращает заданное количество названий месяцев в обратном порядке, начиная с текущего месяца 
+  (vars слобальная константа, которая содержит названия месяцев)
+*/
+
+months(config) {
+  const values = [];
+  const date = new Date();
+  let currentMonth = date.getMonth();
+  let flag = true;
+
+  for (let i = currentMonth; i >= currentMonth - config.count; i--) {
+    values.push(vars.month[i]);
+    if (i - config.count < 0 && flag) {
+      i = config.count;
+      flag = false
+    }
+
+    if (values.length > config.count) {
+      break;
+    }
+  }
+
+  return values;
+}
+
+/```
