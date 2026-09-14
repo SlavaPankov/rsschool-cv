@@ -107,6 +107,35 @@ $button-variants: (
 
 ## Experience
 
+### IKOD — Frontend Developer (2024 – Present)
+
+### Project: IDMX
+
+- Lead a full rewrite of the 125-page IDMX application from Vue 2 + Webpack to Vue 3 (Composition API) + TypeScript + Vite over 9 months, cutting the production build time from 76s to ~10s (~7x faster).
+- Implement new features and maintain existing functionality for the IDMX access management system, working across the frontend stack (Vue 3, TypeScript, Vue Router, Pinia).
+- Review teammates' pull requests, enforcing code quality, architectural consistency, and team conventions across the codebase.
+- Drive architectural decisions for the application — component composition patterns, state-management structure, and build/tooling choices — balancing maintainability with delivery speed.
+- Migrated the codebase to TypeScript 6.0, resolving `vue-tsc`/`typescript-eslint` peer conflicts, a `baseUrl` deprecation, and `noUncheckedSideEffectImports` issues.
+- Fixed a production file-download bug caused by axios response interceptors corrupting blob data, and resolved Outlook Desktop rendering issues in HTML email templates (VML button fallback).
+
+### @ikod/ui-kit — Shared Component Library
+
+- Build and maintain the component base of `@ikod/ui-kit` — a library of 50 Vue 3 (Composition API) components consumed by 4 applications across the company.
+- Architected a monorepo of 5 `@ikod`-scoped packages, configuring Rollup build pipelines per package and setting up the npm publishing workflow.
+- Built the component library's documentation site with VitePress, giving consuming teams a single reference for usage and APIs.
+- Own architectural decisions for the library — design-token conventions, package structure, and multi-theme CSS architecture.
+- Review code across the component library, catching regressions and enforcing consistency before release.
+- Covered the component base with unit tests, reaching 99.3% coverage and reducing regression risk for consuming applications.
+- Designed a `useMask` composable powering masked inputs (`UiInput`, `DateTimePicker`) and refactored an SCSS button component using Sass maps and `@each` loops.
+- Resolved generic TypeScript typing issues in `ui-select`/`ui-select-generic`, fixed CSS `:deep()` scoping leaks, and solved a `vite-plugin-dts`/Rollup version conflict blocking the build pipeline.
+
+### IKOD — OutSystems Developer (2022 – 2024)
+
+- Built and shipped software solutions on the OutSystems low-code platform for a banking client (FICO).
+- Automated banking business processes, data models, and user interfaces, streamlining workflows for end users.
+- Extended OutSystems' native capabilities by building custom Java extensions for requirements the platform couldn't cover out of the box.
+- Worked within a cross-functional development team across the full software development lifecycle.
+
 ### Personal Project: Multiplayer Card Game
 *React (frontend) + Nest.js, Prisma, Socket.IO (backend)*
 
