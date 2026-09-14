@@ -1,0 +1,224 @@
+:root {
+    --ink:            #1B2420;
+    --ink-soft:       #4B564F;
+    --page-bg:        #E7E8E2;
+    --paper:          #F7F7F2;
+    --sidebar-bg:     #1B2420;
+    --sidebar-text:   #EDEFE9;
+    --sidebar-text-soft: #A9B3AB;
+    --accent:         #3E7C74;
+    --accent-on-dark: #8FCFC3;
+    --hairline:       rgba(27, 36, 32, 0.12);
+    --hairline-dark:  rgba(255, 255, 255, 0.14);
+
+    --font-display: "Source Serif 4", Georgia, serif;
+    --font-body:    "IBM Plex Sans", "Segoe UI", sans-serif;
+    --font-mono:    "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(62,124,116,0.35);
+}
+
+a:hover {
+    border-bottom-color: var(--accent);
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+code {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: rgba(27, 36, 32, 0.06);
+    padding: 0.05em 0.35em;
+    border-radius: 3px;
+    overflow-wrap: break-word;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 48px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.sheet {
+    width: 100%;
+    max-width: 1040px;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    box-shadow: 0 30px 60px -30px rgba(27, 36, 32, 0.35);
+    animation: rise 0.6s ease-out;
+    overflow: hidden;
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sheet {
+        animation: none;
+    }
+}
+
+.sidebar {
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 44px 32px;
+    min-width: 0;
+}
+
+.photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #2C3A34;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid var(--hairline-dark);
+}
+
+.name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    color: var(--sidebar-text);
+}
+
+.role {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--accent-on-dark);
+    margin: 0 0 36px;
+}
+
+.side-block {
+    padding-top: 28px;
+    margin-top: 28px;
+    border-top: 1px solid var(--hairline-dark);
+}
+
+.side-block:first-of-type {
+    border-top: 1px solid var(--hairline-dark);
+}
+
+.side-block__title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--sidebar-text-soft);
+    margin: 0 0 16px;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.contact-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 0;
+    border-top: 1px solid var(--hairline-dark);
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+.contact-list li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.contact-list__label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--sidebar-text-soft);
+}
+
+.skill-group {
+    margin-bottom: 20px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group__label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--sidebar-text-soft);
+    margin: 0 0 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    line-height: 1;
+    color: var(--accent-on-dark);
+    border: 1px solid rgba(143, 207, 195, 0.4);
+    border-radius: 3px;
+    padding: 5px 8px;
+    white-space: nowrap;
+}
+
+.side-text {
+    font-size: 14px;
+    margin: 0 0 6px;
+    color: var(--sidebar-text);
+}
+
+.side-text em {
+    color: var(--sidebar-text-soft);
+    font-style: italic;
+}
+
