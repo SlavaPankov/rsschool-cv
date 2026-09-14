@@ -9,8 +9,8 @@
 - 📧 Email: pankovslava94@gmail.com
 - 📱 Phone: +7 (705) 865-74-99
 - 📍 Location: Almaty, Kazakhstan
-- 🔗 LinkedIn: https://www.linkedin.com/in/svyatoslavpankov/
-- 🐙 GitHub: https://github.com/SlavaPankov
+- 🔗 LinkedIn: [linkedin.com/in/svyatoslavpankov](https://www.linkedin.com/in/svyatoslavpankov/)
+- 🐙 GitHub: [github.com/SlavaPankov](https://github.com/SlavaPankov)
 
 ---
 
