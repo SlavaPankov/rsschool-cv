@@ -417,3 +417,88 @@ code {
 .course__name {
     color: var(--ink-soft);
 }
+
+.footer {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 40px;
+    border-top: 1px solid var(--hairline);
+}
+
+.footer__logo {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px dashed rgba(27, 36, 32, 0.3);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__text {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+}
+
+@media (max-width: 780px) {
+    .page {
+        padding: 0;
+    }
+
+    .sheet {
+        grid-template-columns: 1fr;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        padding: 36px 24px;
+    }
+
+    .main {
+        padding: 36px 24px 48px;
+    }
+
+    .footer {
+        padding: 18px 24px;
+    }
+
+    .course {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .course__date {
+        width: auto;
+    }
+}
+
+@media print {
+    body {
+        background: #fff;
+    }
+
+    .page {
+        padding: 0; background: #fff;
+    }
+
+    .sheet {
+        box-shadow: none;
+        animation: none;
+        max-width: 100%;
+        grid-template-columns: 260px 1fr;
+    }
+
+    .code-panel {
+        break-inside: avoid;
+    }
+
+    .entry {
+        break-inside: avoid;
+    }
+}
