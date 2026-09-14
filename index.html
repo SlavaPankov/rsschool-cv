@@ -127,8 +127,91 @@
                     <p>My priorities: writing maintainable, type-safe code, digging into root causes of bugs rather than patching symptoms, and continuously growing my stack - from the Vue ecosystem to React and server-side development.</p>
                 </section>
 
-                <section class="block" id="experience">
+                <section class="block" id="test">
                     <h2 class="block__title">Experience</h2>
+
+                    <article class="entry">
+                        <header class="entry__header">
+                            <h3 class="entry__title">IKOD — Frontend Developer</h3>
+                            <p class="entry__meta">Vue 3 (Composition API) · TypeScript · Vue Router · Pinia · 2024 – Present</p>
+                        </header>
+
+                        <div class="subentry">
+                            <h4 class="subentry__title">Project: IDMX</h4>
+                            <ul class="entry__list">
+                                <li>
+                                    Lead a full rewrite of the 125-page IDMX application from Vue 2 + Webpack to Vue 3 (Composition API) + TypeScript + Vite over 9 months, cutting the production build time from 76s to ~10s (~7x faster).
+                                </li>
+                                <li>
+                                    Implement new features and maintain existing functionality for the IDMX access management system, working across the frontend stack (Vue 3, TypeScript, Vue Router, Pinia).
+                                </li>
+                                <li>
+                                    Review teammates' pull requests, enforcing code quality, architectural consistency, and team conventions across the codebase.
+                                </li>
+                                <li>
+                                    Drive architectural decisions for the application — component composition patterns, state-management structure, and build/tooling choices — balancing maintainability with delivery speed.
+                                </li>
+                                <li>
+                                    Migrated the codebase to TypeScript 6.0, resolving <code>vue-tsc</code>/<code>typescript-eslint</code> peer conflicts, a <code>baseUrl</code> deprecation, and <code>noUncheckedSideEffectImports</code> issues.
+                                </li>
+                                <li>
+                                    Fixed a production file-download bug caused by axios response interceptors corrupting blob data, and resolved Outlook Desktop rendering issues in HTML email templates (VML button fallback).
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="subentry">
+                            <h4 class="subentry__title">@ikod/ui-kit — Shared Component Library</h4>
+                            <ul class="entry__list">
+                                <li>
+                                    Build and maintain the component base of <code>@ikod/ui-kit</code> — a library of 50 Vue 3 (Composition API) components consumed by 4 applications across the company.
+                                </li>
+                                <li>
+                                    Architected a monorepo of 5 <code>@ikod</code>-scoped packages, configuring Rollup build pipelines per package and setting up the npm publishing workflow.
+                                </li>
+                                <li>
+                                    Built the component library's documentation site with VitePress, giving consuming teams a single reference for usage and APIs.
+                                </li>
+                                <li>
+                                    Own architectural decisions for the library — design-token conventions, package structure, and multi-theme CSS architecture.
+                                </li>
+                                <li>
+                                    Review code across the component library, catching regressions and enforcing consistency before release.
+                                </li>
+                                <li>
+                                    Covered the component base with unit tests, reaching 99.3% coverage and reducing regression risk for consuming applications.
+                                </li>
+                                <li>
+                                    Designed a <code>useMask</code> composable powering masked inputs (<code>UiInput</code>, <code>DateTimePicker</code>), solving paste-induced digit shifting and partial-deletion edge cases, and refactored an SCSS button component using Sass maps and <code>@each</code> loops.
+                                </li>
+                                <li>
+                                    Resolved generic TypeScript typing issues in the <code>ui-select</code> / <code>ui-select-generic</code> components, fixed CSS <code>:deep()</code> scoping leaks affecting the production build, and solved a <code>vite-plugin-dts</code>/Rollup version conflict blocking the build pipeline.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="entry">
+                        <header class="entry__header">
+                            <h3 class="entry__title">IKOD — Business Processes Developer</h3>
+                            <p class="entry__meta">OutSystems (Low-Code) · Java · FICO · 2022 – 2024</p>
+                        </header>
+
+                        <ul class="entry__list">
+                            <li>
+                                Designed and delivered software solutions on the OutSystems low-code platform for a banking client (FICO).
+                            </li>
+                            <li>
+                                Automated banking business processes, data structures, and user interfaces.
+                            </li>
+                            <li>
+                                Extended OutSystems' native capabilities by developing custom platform extensions in Java.
+                            </li>
+                            <li>
+                                Developed software as part of a cross-functional development team, participating in the full development lifecycle.
+                            </li>
+                        </ul>
+                    </article>
 
                     <article class="entry">
                         <header class="entry__header">
