@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankov Svyatoslav - Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="sheet">
+            <aside class="sidebar">
+                <div class="photo" style="background-image:url('images/avatar.png')"></div>
+                <h1 class="name">Pankov<br>Svyatoslav</h1>
+                <p class="role">Frontend Developer</p>
+
+                <section class="side-block">
+                    <h2 class="side-block__title">Contact</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-list__label">Email</span>
+                            <a href="mailto:pankovslava94@gmail.com">pankovslava94@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-list__label">Phone</span>
+                            <a href="tel:+77058657499">+7 (705) 865-74-99</a>
+                        </li>
+                        <li>
+                            <span class="contact-list__label">Location</span>
+                            Almaty, Kazakhstan
+                        </li>
+                        <li>
+                            <span class="contact-list__label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/svyatoslavpankov/">linkedin.com/in/svyatoslavpankov</a>
+                        </li>
+                        <li>
+                            <span class="contact-list__label">GitHub</span>
+                            <a href="https://github.com/SlavaPankov">github.com/SlavaPankov</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="side-block">
+                    <h2 class="side-block__title">Skills</h2>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Programming Languages</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Frontend</h3>
+                        <div class="tags">
+                            <span class="tag">Vue 3</span>
+                            <span class="tag">Vue Router</span>
+                            <span class="tag">Pinia</span>
+                            <span class="tag">React</span>
+                            <span class="tag">React Router</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">SCSS/Sass</span>
+                            <span class="tag">Zustand</span>
+                            <span class="tag">HTML5/CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Backend</h3>
+                        <div class="tags">
+                            <span class="tag">Nest.js</span>
+                            <span class="tag">Prisma ORM</span>
+                            <span class="tag">Socket.IO</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">EventEmitter2</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Version Control</h3>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Monorepo workflows</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Architecture & Patterns</h3>
+                        <div class="tags">
+                            <span class="tag">Composables</span>
+                            <span class="tag">Custom hooks</span>
+                            <span class="tag">Discriminated unions</span>
+                            <span class="tag">Strategy pattern</span>
+                            <span class="tag">CSS custom properties</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__label">Tools & Methodologies</h3>
+                        <div class="tags">
+                            <span class="tag">Vite</span>
+                            <span class="tag">Rollup</span>
+                            <span class="tag">SonarQube</span>
+                            <span class="tag">ESLint</span>
+                            <span class="tag">Code review</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="side-block">
+                    <h2 class="side-block__title">English</h2>
+                    <p class="side-text">Level: <em>B2</em></p>
+                    <p class="side-text">"Just Speak It" language school</p>
+                </section>
+            </aside>
+
+            <main class="main">
+
+                <section class="block" id="about">
+                    <h2 class="block__title">About me</h2>
+                    <p>Frontend developer with commercial experience building applications in Vue 3 and TypeScript, including work on a large shared component UI kit within a monorepo - both as a consumer of the library and as a contributor. My work goes beyond markup: it includes deep debugging, generic type systems, custom composables, CSS theming architecture, and build optimization.</p>
+                    <p>In parallel, I'm developing my skills in React and backend development with Nest.js, building a personal project - a full multiplayer real-time application powered by Socket.IO. This gave me hands-on experience designing systems that span both frontend and backend: from type-safe socket event contracts to client-side state management patterns.</p>
+                    <p>My priorities: writing maintainable, type-safe code, digging into root causes of bugs rather than patching symptoms, and continuously growing my stack - from the Vue ecosystem to React and server-side development.</p>
+                </section>
+
+                <section class="block" id="experience">
+                    <h2 class="block__title">Experience</h2>
+
+                    <article class="entry">
+                        <header class="entry__header">
+                            <h3 class="entry__title">Personal Project: Multiplayer Card Game</h3>
+                            <p class="entry__meta">React · Nest.js · Prisma · Socket.IO</p>
+                        </header>
+
+                        <div class="subentry">
+                            <h4 class="subentry__title">Frontend (React)</h4>
+                            <p class="subentry__meta">Source code: <a href="https://github.com/SlavaPankov/spy-goat-frontend">github.com/SlavaPankov/spy-goat-frontend</a></p>
+                            <ul class="entry__list">
+                                <li>
+                                    Implemented an app-level singleton socket established after authentication; split <code>SocketContext</code>/<code>SocketProvider</code> for Vite Fast Refresh compatibility.
+                                </li>
+                                <li>
+                                    Built a Zustand <code>presenceStore</code> with reference counting to prevent duplicate subscription events.
+                                </li>
+                                <li>
+                                    Designed a discriminated union for <code>RoomForm</code>'s <code>onSubmit</code> prop, keeping the type-narrowing intact instead of breaking it on destructure.
+                                </li>
+                                <li>
+                                    Built a layered React hook architecture for chat: <code>useChatMessages</code>, <code>useChatSocket</code>, <code>useChatAudio</code>, <code>useChatInput</code>, <code>useChatUnread</code>, <code>useChatScroll</code>, <code>useChat</code>.
+                                </li>
+                                <li>
+                                    Implemented a <code>ChatContextMenu</code> using <code>createPortal</code> with viewport boundary adjustment.
+                                </li>
+                                <li>
+                                    In progress: client-side dual-token JWT authentication (in-memory access token, HttpOnly-cookie refresh token).
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="subentry">
+                            <h4 class="subentry__title">Backend (Nest.js, Prisma, Socket.IO)</h4>
+                            <p class="subentry__meta">Source code: <a href="https://github.com/SlavaPankov/spy-goat-backend">github.com/SlavaPankov/spy-goat-backend</a></p>
+                            <ul class="entry__list">
+                                <li>
+                                    Designed and built a Nest.js backend with Prisma ORM and Socket.IO for real-time gameplay.
+                                </li>
+                                <li>
+                                    Implemented a bot system using the Strategy pattern (Random / Balanced / Lookahead).
+                                </li>
+                                <li>
+                                    Built a room invitation system: direct invites and shareable token links.
+                                </li>
+                                <li>
+                                    Built an online presence system via <code>ConnectionGateway</code>, <code>PresenceService</code>, and <code>EventEmitter2</code>.
+                                </li>
+                                <li>
+                                    Designed <code>Message</code>/<code>MessageRead</code> models for a full chat system: soft delete, AES-256-GCM encryption, cursor-based pagination.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="block" id="code">
+                    <h2 class="block__title">Code Samples</h2>
+
+                    <figure class="code-panel">
+                        <figcaption class="code-panel__caption">
+                            <span class="code-panel__file">useMask.ts</span>
+                            <span class="code-panel__desc">Vue 3 - masked input composable</span>
+                        </figcaption>
+                        <pre class="code-panel__body">
+                        <code>
+// useMask.ts (simplified fragment)
+const EMPTY_SLOT = '_'
+
+export const useMask = (mask: Ref&lt;string&gt;, modelValue: Ref&lt;string&gt;) =&gt; {
+  const rawValue = ref(modelValue.value)
+
+  const applyPositionalValidation = (input: string): string =&gt; {
+    return input
+      .split('')
+      .map((char, i) => (isValidForSlot(char, mask.value[i]) ? char : EMPTY_SLOT))
+      .join('')
+  }
+
+  watch(modelValue, (val) =&gt; {
+    rawValue.value = applyPositionalValidation(val)
+  }, { immediate: true })
+
+  return { rawValue }
+}
+                        </code>
+                    </pre>
+                    </figure>
+
+                    <figure class="code-panel">
+                        <figcaption class="code-panel__caption">
+                            <span class="code-panel__file">RoomForm.ts</span>
+                            <span class="code-panel__desc">TypeScript - discriminated union for a type-safe onSubmit</span>
+                        </figcaption>
+                        <pre class="code-panel__body">
+                        <code>
+type RoomFormSubmit =
+  | { mode: 'create'; payload: CreateRoomDto }
+  | { mode: 'edit'; payload: EditRoomDto; roomId: string }
+
+interface RoomFormProps {
+  onSubmit: (data: RoomFormSubmit) =&gt; void
+}
+
+// Important: do NOT destructure data.payload at the onSubmit call site,
+// or TS loses the link between the mode discriminant and the payload type
+                        </code>
+                    </pre>
+                    </figure>
+
+                    <figure class="code-panel">
+                        <figcaption class="code-panel__caption">
+                            <span class="code-panel__file">_button.scss</span>
+                            <span class="code-panel__desc">SCSS - generating button variants from a Sass map</span>
+                        </figcaption>
+                        <pre class="code-panel__body">
+                        <code>
+$button-variants: (
+  primary: var(--ui-primary),
+  danger: var(--ui-error),
+);
+
+@each $name, $color in $button-variants {
+  .ui-button--#{$name} {
+    background-color: $color;
+  }
+}
+                        </code>
+                    </pre>
+                    </figure>
+                </section>
+
+                <section class="block" id="education">
+                    <h2 class="block__title">Education</h2>
+
+                    <article class="entry">
+                        <h3 class="entry__title">Nizhny Novgorod State Technical University</h3>
+                        <p class="entry__meta">Bachelor's degree, Power Machinery Engineering · 2012–2016</p>
+                    </article>
+
+                    <ul class="course-list">
+                        <li class="course">
+                            <span class="course__date">2020</span>
+                            <span class="course__name">Skillbox - Web Developer</span>
+                        </li>
+                        <li class="course">
+                            <span class="course__date">2023</span>
+                            <span class="course__name">RSSchool - JavaScript/Frontend</span>
+                        </li>
+                        <li class="course">
+                            <span class="course__date">2023</span>
+                            <span class="course__name">RSSchool - React</span>
+                        </li>
+                        <li class="course">
+                            <span class="course__date">2024</span>
+                            <span class="course__name">RSSchool - Node.js</span>
+                        </li>
+                    </ul>
+                </section>
+
+            </main>
+
+            <footer class="footer">
+                <div class="footer__logo" style="background-image:url('images/logo.svg')"></div>
+                <p class="footer__text">© 2026 Pankov Svyatoslav ·
+                    <a href="https://github.com/SlavaPankov">github.com/SlavaPankov</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
